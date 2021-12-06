@@ -1,0 +1,71 @@
+*
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(165, 165, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.empty
+{
+
+    width: 150px;
+    height: 150px;
+    background-color: rgb(241, 239, 243);
+    margin: 10px;
+    border: 2px solid black;
+    
+}
+
+.fill
+{
+
+    background-image: url('http://source.unsplash.com/random/150*150');
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    cursor: pointer;
+    
+   
+}
+
+.hold
+{
+
+    border: 2px rgb(66, 11, 155);
+}
+
+.hovered
+{
+    background-color: cadetblue;
+    border-color: crimson;
+    border-style: dashed;
+}
+
+@media (max-width: 770px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
